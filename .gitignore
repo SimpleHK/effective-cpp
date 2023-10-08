@@ -1,0 +1,7 @@
+**/.cache/
+**/.idea/
+**/.build/
+**/build/
+**/*debug/
+**/.DS_Store
+**/.vscode/
