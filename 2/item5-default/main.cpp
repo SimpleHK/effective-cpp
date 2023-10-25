@@ -100,6 +100,7 @@ public:
 
     void operator=(const NamedObject& item)
     {
+        std::cout << ">>>>>>>>>>" << std::endl;
         this->nameValue = item.nameValue; // newDog = oldDog, newDog会被改变
     }
 
@@ -126,7 +127,7 @@ int main()
 
     std::cout << newDog << std::endl;
 
-    NamedObject<int> t = p; // t.nameValue 和 p.nameValue 引用都指向了 newDog
+    NamedObject<int> t = p; // 这样调用的是拷贝构造函数，t.nameValue 和 p.nameValue 引用都指向了 newDog
     t.printIfo();
     newDog = "abc";
     t.printIfo();
